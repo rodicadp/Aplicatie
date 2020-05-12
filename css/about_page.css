@@ -1,0 +1,409 @@
+body{
+    background: url('../img/817665.jpg') center center fixed no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #345678;
+}
+.link-uri{
+    padding-right: 90px;
+}
+a:link, a:visited{
+    text-decoration:none;
+	color:black;
+}
+.nav {
+  overflow: hidden;
+  padding: 10px;
+  padding-left: 23%;
+  padding-right: 6%;
+  background-color: #18212c;
+  border-bottom-right-radius: 85px;
+  border-bottom-left-radius: 85px;
+}
+
+.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 13px;
+  text-decoration: none;
+  display:inline-block;
+  font-family: sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border: 2px solid#18212c;
+  margin-right: 70px;
+}
+
+.nav a:hover  {
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+a.actived{
+    color:black;
+    background-color: white;
+}
+
+.actived {
+  border: 2px solid black;
+  border-radius: 20px;
+}
+/***********************************************************************/
+
+.login_sign {
+    float: right;
+    cursor: pointer;
+}
+#login_button {
+    margin-right: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+#sign_button {
+    margin-right: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+/***********************************************************************/
+/*stilizare log si sign*/
+.header_login {
+    text-align: center;
+}
+.button_modal_login {
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    background: #18212c;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+}
+.button_modal_login_text {
+
+    font-size: 18px;
+    color: white;
+    background: #18212c;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    margin: auto;
+}
+/*deschidere formular de log in si sign up*/
+.close{
+    float: right;
+    /* padding-right: 5px; */
+    font-size: 20px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.modal-content{
+    background-color: #83848c;
+    margin: 6% auto;
+    padding: 20px;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 18px;
+    animation-name: modalopen;
+    animation-duration: 0.75s;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+@keyframes modalopen {
+    from{opacity: 0}
+    to{opacity: 1;}
+}
+.closeBtn, .closeBtn2, .closeBtn3{
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+.closeBtn:hover .closeBtn2:hover, .closeBtn:focus .closeBtn2:focus{
+    color: black;
+    text-decoration: none;
+}
+/***********************************************************************/
+/* stilizare log in si sign up*/
+.success {
+  color: #3c763d;
+  background: #dff0d8;
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+
+.buton {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #3f823e;
+  border: none;
+  border-radius: 5px;
+  margin-left: 180px;
+}
+.header {
+  width: 85%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #3f823e;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 40px 40px 0px 0px;
+  padding: 20px;
+}
+form, .continut {
+  width: 85%;
+  margin: 0px auto;
+  padding: 30px;
+  border-radius: 0px 0px 40px 40px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 4px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+.input-group input {
+  height: 30px;
+  width: 90%;
+  padding: 5px 10px;
+  font-size: 16px;border: none;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+.error {
+  width: 92%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
+}
+/***********************************************************************/
+/*tabs*/
+.tot {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+/******************************************************************/
+/*.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.follow {
+    cursor: pointer;
+    width: 340px;
+    height: 480px;
+}
+.front, .back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+}
+.front img {
+    height: 100%;
+}
+.front {
+    transform: perspective(600px) rotateY(0deg);
+}
+.back {
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+}
+.back-content {
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+}
+.sm {
+    margin: 20px 0;
+}
+.sm a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+.sm a:hover {
+    background: #2c3e50;
+    color: white;
+}
+.follow:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+.follow:hover > .back {
+    transform: perspective(600px) rotateY(0deg);
+}*/
+/**********************************************************************************************************************/
+/********************************************************************/
+.imagine {
+    cursor: pointer;
+    width: 31%;
+    height: 200px;
+    margin-bottom: 47px;
+}
+
+.frontt {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s linear;
+}
+.backk {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s linear;
+    position: relative;
+    bottom: 100%;
+}
+.frontt img {
+    height: 100%;
+    width: 100%;
+    border-radius: 18px;
+}
+.frontt {
+    transform: perspective(600px) rotateY(0deg);
+}
+.backk {
+    background-color: #cdccca;
+    transform: perspective(600px) rotateY(180deg);
+    border-radius: 18px;
+}
+.backk-content {
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+}
+.smm {
+    margin: 20px 0;
+}
+.smm a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+.smm a:hover {
+    background: #2c3e50;
+    color: white;
+}
+.imagine:hover > .frontt {
+    transform: perspective(600px) rotateY(-180deg);
+}
+.imagine:hover > .backk {
+    transform: perspective(600px) rotateY(0deg);
+}
+.imagine2:hover > .frontt2 {
+    transform: perspective(600px) rotateY(-180deg);
+}
+.imagine2:hover > .backk2 {
+    transform: perspective(600px) rotateY(0deg);
+}
+.frontt2 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 18px;
+}
+.frontt2 {
+    transform: perspective(600px) rotateY(0deg);
+}
+.backk2 {
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+    border-radius: 18px;
+}
+.frontt2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s linear;
+}
+.backk2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s linear;
+    position:relative;
+    bottom: 100%;
+}
+.about-image {
+    width: 100%;
+    height: 100%;
+}
+.imagine2 {
+    cursor: pointer;
+    width: 31%;
+    height: 200px;
+    margin-right: 47.8px;
+}
+.imagine22:hover > .frontt2 {
+    transform: perspective(600px) rotateY(-180deg);
+}
+.imagine22:hover > .backk2 {
+    transform: perspective(600px) rotateY(0deg);
+}
+.imagine22 {
+    cursor: pointer;
+    width: 31%;
+    height: 200px;
+    margin-left: 47.8px;
+}
+.ceva {
+    /*background-color: #848c8c;
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.6), 0 7px 0px 0 rgba(0, 0, 0, 0.17);*/
+    text-align: center;
+    font-size: 18px;
+}
