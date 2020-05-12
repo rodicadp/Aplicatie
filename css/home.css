@@ -1,0 +1,367 @@
+body{
+    background: url('../img/817665.jpg') center center fixed no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #345678;
+
+}
+.link-uri{
+
+    padding-right: 90px;
+}
+a:link, a:visited{
+    text-decoration:none;
+	color:black;
+}
+.nav {
+  overflow: hidden;
+  padding: 10px;
+  padding-left: 23%;
+  padding-right: 6%;
+  background-color:#18212c;
+  border-bottom-right-radius: 85px;
+  border-bottom-left-radius: 85px;
+}
+
+.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 13px;
+  text-decoration: none;
+  display:inline-block;
+  font-family: sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border: 2px solid #18212c;
+  margin-right: 70px;
+}
+
+.nav a:hover  {
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+a.active{
+    color:black;
+    background-color: white;
+
+
+}
+
+.active {
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.login_sign {
+    float: right;
+    cursor: pointer;
+}
+#login_button {
+    margin-right: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+#sign_button {
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+
+
+/*deschidere formular de log in si sign up */
+.close{
+    float: right;
+    font-size: 20px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.modal-content{
+    background-color: #83848c;
+    margin: 6% auto;
+    padding: 20px;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 18px;
+    animation-name: modalopen;
+    animation-duration: 0.75s;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+@keyframes modalopen {
+    from{opacity: 0}
+    to{opacity: 1;}
+}
+.closeBtn, .closeBtn2{
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+.closeBtn:hover .closeBtn2:hover, .closeBtn:focus .closeBtn2:focus{
+    color: black;
+    text-decoration: none;
+
+}
+.header_login {
+    text-align: center;
+}
+.button_modal_login {
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    background: #18212c;
+    border-radius: 5px;
+    border: none;
+    width: 30%;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+}
+.button_modal_login_text {
+
+    font-size: 18px;
+    color: white;
+    background: #18212c;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+}
+/* stilizare log in si sign up */
+.success {
+  color: #3c763d;
+  background: #dff0d8;
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+
+.buton {
+  padding: 15px;
+  font-size: 18px;
+  color: white;
+  background: #18212c;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  margin: auto;
+}
+
+.header-login{
+background-color: #18212c;
+
+}
+.header {
+  width: 85%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #3f823e;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 40px 40px 0px 0px;
+  padding: 20px;
+}
+form, .continut {
+  width: 85%;
+  margin: 0px auto;
+  padding: 30px;
+  border-radius: 0px 0px 40px 40px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 4px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+.input-group input {
+  height: 35px;
+  width: 90%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.error {
+  width: 92%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
+}
+/*********************************************************************************/
+/*about & form */
+.about_form {
+    padding: 6px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 91%;
+    margin: auto;
+    margin-top: 30px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.about {
+    text-align: center;
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.6), 0 7px 0px 0 rgba(0, 0, 0, 0.17);
+    width: 65%;
+    border-radius: 20px;
+}
+
+.mySlides{
+    width: 100%;
+    height: 550px;
+    border-radius: 20px;
+}
+.topslides {
+    width: 92.5%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.form {
+    text-align: center;
+    width: 33%;
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.6), 0 7px 0px 0 rgba(0, 0, 0, 0.17);
+    background-color: #83848c;
+    border-radius: 20px;
+}
+
+
+
+/************************************************************************************/
+/* stilizare coloane  */
+.articles {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+.cub {
+    box-shadow: 0px 0px 5px 8px rgba(0, 0, 0, 0.3), 0 7px 0px 0 rgba(0, 0, 0, 0.10);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+.titleandmorelink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.tit.titleandmorelink {
+    flex: 0 0 66.666667%;
+    padding-left: 20px;
+    max-width: 66.666667%;
+}
+a.titleandmorelink {
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding-top: 20px;
+    cursor: pointer;
+    background-color: rgb(108, 117, 125)
+    border-radius: 40px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(108, 117, 125);
+}
+.More {
+    margin-top: 15px;
+    border-style: solid;
+    border-color: black;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 15px;
+}
+
+.article-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.column{
+    background-color: #657774;
+    text-align: center;
+    width: 32%;
+    height: 110px;
+    border: 1.5px solid;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*detalii articol*/
+.imag {
+    width: 35%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: red;
+    margin-right: 5px;
+}
+.sub {
+    width: 63.8%;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px
+    max-height: 110px;
+    display: flex;
+    flex-direction: column;
+}
+.text {
+    background-color: violet;
+     height: 91px;
+    border-top-right-radius: 20px;
+}
+.inform {
+    background-color: yellow;
+    /*height: 22px;*/
+
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.icons {
+    width: 60%;
+}
+.iconita {
+    font-size: 12px;
+    margin-right: 20px;
+
+}
+.author {
+    font-size: 12px;
+    width: 40%;
+    padding-top: 3px;
+}

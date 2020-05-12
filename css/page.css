@@ -1,0 +1,409 @@
+body{
+    background: url('../img/817665.jpg') center center fixed no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #345678;
+}
+.link-uri{
+    padding-right: 90px;
+}
+footer{
+    clear:both;
+    padding: 10px;
+    text-align: center;
+}
+a:link, a:visited{
+    text-decoration:none;
+	color:black;
+}
+.nav {
+  overflow: hidden;
+  padding: 10px;
+  padding-left: 23%;
+  padding-right: 6%;
+  background-color: #18212c;
+  border-bottom-right-radius: 85px;
+  border-bottom-left-radius: 85px;
+}
+
+.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 13px;
+  text-decoration: none;
+  display:inline-block;
+  font-family: sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border: 2px solid#18212c;
+  margin-right: 70px;
+}
+
+.nav a:hover  {
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+a.actived{
+    color:black;
+    background-color: white;
+}
+
+.actived {
+  border: 2px solid black;
+  border-radius: 20px;
+}
+/***********************************************************************/
+/*<h1>Ne puteti trimite un mesaj rapid folosind formularul de mai jos</h1>*/
+
+
+
+/*.footer {
+    border-top-right-radius: 85px;
+    border-top-left-radius: 85px;
+    background-color: black;
+}
+.footer ul{
+    list-style-type: none;
+    text-align: center;
+}
+.footer li:hover{
+    border-bottom: 1px solid black;
+    }
+#f-menu li{
+    display: inline;
+}
+#f-menu li a{
+    padding: 20px;
+}
+*/
+.login_sign {
+    float: right;
+    cursor: pointer;
+}
+#login_button {
+    margin-right: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+#sign_button {
+    margin-right: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+/***********************************************************************/
+/*stilizare log si sign*/
+.header_login {
+    text-align: center;
+}
+.button_modal_login {
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    background: #18212c;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+}
+.button_modal_login_text {
+
+    font-size: 18px;
+    color: white;
+    background: #18212c;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    margin: auto;
+}
+/*deschidere formular de log in si sign up*/
+.close{
+    float: right;
+    /* padding-right: 5px; */
+    font-size: 20px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.modal-content{
+    background-color: #83848c;
+    margin: 6% auto;
+    padding: 20px;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 18px;
+    animation-name: modalopen;
+    animation-duration: 0.75s;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+@keyframes modalopen {
+    from{opacity: 0}
+    to{opacity: 1;}
+}
+.closeBtn, .closeBtn2, .closeBtn3{
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+.closeBtn:hover .closeBtn2:hover, .closeBtn:focus .closeBtn2:focus{
+    color: black;
+    text-decoration: none;
+}
+/***********************************************************************/
+/* stilizare log in si sign up*/
+.success {
+  color: #3c763d;
+  background: #dff0d8;
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+
+.buton {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #3f823e;
+  border: none;
+  border-radius: 5px;
+  margin-left: 180px;
+}
+.header {
+  width: 85%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #3f823e;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 40px 40px 0px 0px;
+  padding: 20px;
+}
+form, .continut {
+  width: 85%;
+  margin: 0px auto;
+  padding: 30px;
+  border-radius: 0px 0px 40px 40px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 4px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+.input-group input {
+  height: 30px;
+  width: 90%;
+  padding: 5px 10px;
+  font-size: 16px;border: none;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+.error {
+  width: 92%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
+}
+/***********************************************************************/
+/*tabs*/
+.tot {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #bfc3c5;
+    border-radius: 20px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+.tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+ /* background-color: #ccc;*/
+ background-color: #bfc3c5;
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+/***********************************************************************/
+/* create buttton*/
+.titleandmorelink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.tit.titleandmorelink {
+    flex: 0 0 66.666667%;
+    padding-left: 20px;
+    max-width: 66.666667%;
+}
+a.titleandmorelink {
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding-top: 20px;
+    cursor: pointer;
+    background-color: rgb(108, 117, 125)
+    border-radius: 40px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(108, 117, 125);
+}
+.More {
+    margin-top: 15px;
+    border-style: solid;
+    border-color: black;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+/******************************************************************/
+.cub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.cub-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.category-title h3 {
+    margin-left: 30px;
+    padding-top: 15px;
+}
+/*.column {
+    background-color: #848c8c;
+    text-align: center;
+    width: 23%;
+    border-style:solid;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+} */
+.column{
+    background-color: #657774;
+    text-align: center;
+    width: 31%;
+    height: 110px;
+    border: 1.5px solid;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.imag img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.imag {
+    width: 35%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    max-height: 110px;
+    margin-right: 5px;
+    background-color: red;
+}
+.sub {
+    width: 63.8%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    max-height: 110px;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+
+.all_category {
+box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+border-radius: 10px;
+}
+.text {
+    background-color: violet;
+     height: 92px;
+    border-top-right-radius: 20px;
+}
+.inform {
+    background-color: yellow;
+    /*height: 22px;*/
+
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.icons {
+    width: 60%;
+}
+.iconita {
+    font-size: 12px;
+    margin-right: 20px;
+
+}
+.author {
+    font-size: 12px;
+    width: 40%;
+    padding-top: 3px;
+}
