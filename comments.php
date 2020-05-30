@@ -1,9 +1,11 @@
 <?php
+
+require ('mysql.php');
 if(isset($_POST['user_comm']))
 {
   $id_debate =$_POST['id_debate'];
   $comment=$_POST['user_comm'];
-  $id_user = $_SESSION['id_user'];
+  $id_user = $_POST['id_user'];
   $insert_query="INSERT INTO pro (id_debate, id_user, comment, createdOn)
    VALUES ('$id_debate','$id_user',$comment', NOW())";
 
