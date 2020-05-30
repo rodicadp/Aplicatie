@@ -6,8 +6,8 @@ if(isset($_POST['user_comm']))
   $id_debate =$_POST['id_debate'];
   $comment=$_POST['user_comm'];
   $id_user = $_POST['id_user'];
-  $insert_query="INSERT INTO pro (id_debate, id_user, comment, createdOn)
-   VALUES ('$id_debate','$id_user',$comment', NOW())";
+
+  $insert_query = "INSERT INTO pro (id_debate, id_user, comment, createdOn) VALUES ('$id_debate','$id_user','$comment', NOW())";
 
   $insert = mysqli_query($conexiune,$insert_query);
   $id=mysqli_insert_id($conexiune);
@@ -26,7 +26,7 @@ if(isset($_POST['user_comm']))
 	    <p class="time"><?php echo $time;?></p>
     </div>
   <?php
-  }
+    }
 exit;
 }
  ?>
